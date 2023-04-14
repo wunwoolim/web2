@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tables tag</title>
+	<!-- tr은 데이터를 가지고있는 태그가 아니므로 border가 적용되지 않는다 -->
+	<style>
+		table,th,td{
+			border:1px solid gray;
+			border-collapse:collapse;
+		}
+		th,td{
+			font-size:12px;
+			/* padding:20px; */
+			padding:10px 20px; /*앞은 t,b 뒤는 r,l*/
+			/* padding:t10px r10px b10px l10px ; */
+/* 			padding-top:10px;
+			padding-right:10px;
+			padding-bottom:10px;
+			padding-left:10px; */
+		}
+		tr:nth-child(even) {
+  			background-color: #D6EEEE;
+		}
+	</style>
+	
+</head>
+<body>
+	<h1>Tables</h1>
+	<table>
+		<tr>
+			<!-- <th>번호</th> -->
+			<th colspan=2>번호/성명</th>
+			<th>연락처</th>
+			<th>주소</th>		
+		</tr>
+		<tr>
+			<td rowspan=2>1</td>
+			<td >홍길동</td>
+			<td>010-1234-1234</td>
+			<td>서울시 강남구 역삼동</td>
+		</tr>
+		<tr>
+			<!-- <td>2</td> -->
+			<td>홍길순</td>
+			<td>010-9876-9876</td>
+			<td>부산시 해운대구</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>테스트</td>
+			<td>010-4523-5681</td>
+			<td>경기도 일산시 </td>
+		</tr>
+	
+	</table>
+</body>
+</html>
