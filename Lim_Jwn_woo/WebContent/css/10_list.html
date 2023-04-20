@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - List</title>
+	<style>
+		*{
+			font-family:"나눔고딕";
+			/* padding:0px; margin:0px; */
+		}
+		ul.u1{
+			border: 1px solid red;
+			list-style-type:circle;
+			padding:20px;
+			background:yellow;
+		}
+		ul.u1 li{
+			border: 1px solid blue;
+			background:white;
+			margin:5px;
+			padding-left:5px;
+		}
+		ul.u2{
+			/* border: 1px solid red; */
+			list-style-type:none;
+			padding:0px;
+		}
+		ul.u2 li{
+			/* border: 1px solid blue; */
+			/* display:inline-block; */
+			/* padding:5px; */
+			width:100px;
+			text-align:center;
+			/* margin-right:15px; */
+			float:left;
+		}
+		ul.u2 a{
+			border:1px solid white;
+			text-decoration:none;
+			display:inline-block;
+			background:tomato;
+			width:100px;
+			padding:10px 5px;
+			margin-right:5px;/* li안에 a가 들어가 있으므로 li크기랑 a크기가 서로 같아 여유 공간이 없어서 a에 margin이 적용이 안된다 */
+			color:white;
+			font-size:12px;
+		}	
+		ul.u2 li:nth-child(1){
+			/* background:tomato; */
+			margin-left:30px;
+		}
+	</style>
+</head>
+<body>
+	<h1>List - UL,OL</h1>
+	<ul class = "u1">
+		<li>JAVA</li>
+		<li>Oracle</li>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+	</ul>
+	
+	<h3>Navigation Menu</h3>
+	<ul class="u2">
+		<li><a href="#">로그인</a></li>
+		<li><a href="#">회원가입</a></li>
+		<li><a href="#">머아패아자</a></li>
+		<li><a href="#">공지사항</a></li>
+		<li><a href="#">게시판</a></li>
+		<li><a href="#">관리자</a></li>
+	</ul>
+</body>
+</html>
