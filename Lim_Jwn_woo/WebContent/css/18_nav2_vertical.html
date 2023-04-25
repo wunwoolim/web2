@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		ul {
+			background:gray;
+			list-style-type:none;
+			margin:0px;
+			padding:0px;
+			width:600px;
+			overflow:hidden;
+		}
+		li{
+			/* display:inline-block; */
+			/* width:100px;
+			height:20px; */
+			float:left;
+		}
+		ul li a{
+			display:block;
+			text-decoration:none;
+			color:white;
+			padding:8px 15px;
+		}
+		ul li:last-child{
+			float:right;
+		}
+		ul li:first-child a{
+			background:mediumseagreen;
+			color:white;
+		}
+		ul li:first-child ~ li:hover a{
+			background:#000;
+			color:white;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>Vertical</h1>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">News</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">About</a></li>
+	</ul>
+</body>
+</html>

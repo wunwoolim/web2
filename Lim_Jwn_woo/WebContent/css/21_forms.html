@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Forms</title>
+	<style>
+		ul{
+			border:1px solid red;
+			list-style-type:none;
+			padding:0px; magin:0px;
+			width:500px;
+		}
+		label{
+			/* border:2px solid blue; */
+			display:inline-block;
+			width:100px;
+			padding:5px 0px;
+			text-align:center;
+			font-size:12px;
+			background:tomato;
+			color:white;
+			border-radius:4px;
+			margin-right:5px;
+		}
+		input{
+			/* border:1px solid green; */
+			width:50%;
+			padding:5px 5px;
+			border-radius:4px;
+			vertical-align:top;
+			text-indent:10px;
+		}
+		input:focis{
+			border:2px solid lightgray;
+		}
+		li{
+			margin:10px 0px;
+			text-align:center;
+		}
+		li:first-child{
+			/* border:1px solid blue; */
+			margin-top:20px;
+		}
+		li:last-child{
+			padding-left:40px;
+		}
+		button{
+			width:100px;
+			padding:5px;
+			font-size:12px;
+			background:mediumseagreen;
+			color:white;
+			border:2px double gray;
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>login form</h1>
+	<form name="loginform" action="#" method="get">
+		<ul>
+			<li>
+				<label>ID</label>
+				<input type="text" name="id">
+			</li>
+			<li>
+				<label>password</label>
+				<input type="password" name="pass">
+			</li>
+			<li>
+				<button type="button">login</button>
+				<button type="button">cancle</button>
+			</li>
+		</ul>
+	
+	</form>
+</body>
+</html>

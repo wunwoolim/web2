@@ -7,13 +7,12 @@
 	font-family:"³ª´®°íµñ";
 }
 
-/* 
-	header style sheet
- */
+
+
 header{
 	background-image:url("http://localhost:9000/mycgv/images/bg_header.gif");
-	height:149px;
 	
+	height:149px;
 }
 .header_menu{
 	/* border:1px solid red; */
@@ -80,16 +79,27 @@ header{
 /* 
 	index-content style sheet
  */
-.section1{
+ .section1{
 		background-image:url("http://localhost:9000/mycgv/images/carousel_bg.png");
+		height:450px;
+		width:100%;
+		/* border:2px solid green; */
 	}
-.section1_d1,.content2,.content3{
+.content2,.content3{
 	width:1000px;
 	margin:auto;
 	/* border:1px solid blue; */
+	
+	
+} 
+.section1_d1{
+	width:1000px;
+	height:450px;
+	margin:auto;
+	/* border:3px solid red; */
+	
 }
 
 /* 
 	footer-content style sheet
  */
-

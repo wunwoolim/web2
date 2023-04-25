@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		div ul{
+			background:lightgray;
+			list-style-type:none;
+			width:150px;
+			margin:0px;
+			padding:0px;
+			height:400px;
+			float:left;
+		}
+		ul li a {
+			/* border:1px solid red; */
+			display:block;
+			padding:8px 12px;
+			text-decoration:none;
+			color:Gray;
+			
+		}
+		div li:first-child a{
+			background:mediumseagreen;
+			color:white;
+		}
+		div li:first-child ~ li:hover a{
+			background:gray;
+			color:white;
+		}
+		div.content{
+			background:tomato;
+			height:400px;
+			
+		}
+	</style>
+</head>
+<body>
+	<h1>Vertical</h1>
+	<div>
+		<ul> <!-- 왼쪽 메뉴 -->
+			<li><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</div>
+	<div class="content"><!-- content -->
+		<p>vertical menu - home</p>
+	</div>
+</body>
+</html>
