@@ -6,6 +6,38 @@
 	padding:0px; margin:0px;
 	font-family:"³ª´®°íµñ";
 }
+.header_menu,.section1_d1,.content2,.content3,.footer_menu,section.login,section.join
+,section.mypage,section.notice,section.board,section.admin{
+	width:1000px;
+	margin:auto;
+	/* text-align:center; */
+	/* border:1px solid blue; */
+}
+section.login form[name='loginform'], section.join form[name='joinform'], section.mypage > div,
+section.notice table, section.board table,section.admin > div{
+	/* border:1px solid red; */
+	width:70%;
+	margin:auto;
+}
+.title{
+	border-left:15px solid #333;
+	border-bottom:1px solid #333;
+	width:30%;
+	font-size:25pt;
+	padding:5px 0px 10px 20px;
+	margin:30px 0px 30px 100px;
+	font-style:italic;
+}
+.btn_style{
+	width:130px;
+	padding:7px 0;
+	background:tomato;
+	color:white;
+	font-size:10pt;
+	font-weight:700;
+	border:1px solid wgihe;
+	outline:1px solid red;
+}
 
 /* 
 	header style sheet
@@ -15,12 +47,7 @@ header{
 	height:149px;
 	
 }
-.header_menu{
-	/* border:1px solid red; */
-	width:1000px; height:300px;
-	margin:auto;
-	
-}
+
 .header_menu nav,.header_menu ul,.header_menu li {
 	/* border:1px solid blue; */
 }
@@ -83,13 +110,449 @@ header{
 .section1{
 		background-image:url("http://localhost:9000/mycgv/images/carousel_bg.png");
 	}
-.section1_d1,.content2,.content3{
-	width:1000px;
-	margin:auto;
-	/* border:1px solid blue; */
+
+.content2 > img,.content3 > img{
+		padding: 15px 0px;
+		
+}
+.content3 > div:nth-child(2) > img:first-child,.content3 > div:last-child > img:first-child{
+	/* border:1px solid green; */
+	float:left;
+}
+.content3 div:nth-child(2) img:last-child,.content3 div:last-child img:last-child{
+	/* border:1px solid green; */
+	float:right;
+	
+}
+.content3 div:nth-child(2) img:nth-child(2){
+	padding-right:6px;
+	clear:both;	
 }
 
-/* 
+.content3 div:nth-child(2){
+	padding-bottom:20px;
+	text-align:center;
+}
+.content3 div:nth-child(3){
+	/* border:2px solid red; */
+	padding-top:20px;
+	text-align:center;
+}
+.content3 div:nth-child(3) img:nth-child(2){
+	padding-right:6px;
+	clear:both;
+}
+.content3 div:nth-child(3) img:first-child,
+.content3 div:nth-child(3) img:last-child{
+	border:7px double black;
+	/* outline:3px double black; */
+}
+
+/************************************ 
 	footer-content style sheet
- */
+ ************************************/
+
+.footer_bg{
+	text-align:center;
+	background:#FFDB99;
+	position:relative;
+	margin-top:50px;
+}
+.footer_bg > img{
+	/* border:2px solid red; */
+	margin-top:-55px;
+}
+.footer_menu .ul1 li{
+	margin:0px; padding:0px;
+	list-style-type:none;
+	display:inline-block;
+	text-align:center;
+	
+	}
+.footer_menu .ul1 li a{
+	text-decoration:none;
+	padding:0px 9px;
+	color:#777;
+	font-weight:700;
+}
+.footer_menu nav{
+	padding:25px 0px;
+}
+.footer_menu .ul1 li:nth-child(6){
+	color:black;
+	text-decoration:underline;
+}
+.footer_menu .ul1 li a:hover{
+	text-decoration:underline;
+}
+.footer_menu .ul1{
+	border-bottom:1px solid lightgray;
+	height:50px;
+}
+.footer_menu div{
+	margin:10px;
+	text-align:left;
+}
+.footer_menu div p{
+	font-size:13pt;
+	color:#777;
+	padding:3px 0px;
+	
+}
+
+/************************************ 
+	login form style sheet
+ ************************************/
+section.login form ul{
+	/* border:1px solid blue; */
+	list-style-type:none;
+	margin:0px; padding:0px;
+}
+section.login form ul li{ 
+	clear:left;
+}
+section.login form ul label{
+/* 	border:1px solid blue; */
+	display:inline-block;
+	width:160px;
+	padding:10px 0;
+	background:#ddd;
+	color:black;
+	border-radius:4px;
+	font-size:10pt;
+	font-weight:550;
+	float:left;
+	text-align:center;
+}
+section.login form ul input{
+	width:50%;
+	padding:8px 0px;
+	border:1px solid #ddd;
+	margin:0 0 10px 10px;
+	font-size:10pt;
+}
+
+section.login form ul li:nth-child(3){
+	/* border:1px solid blue; */
+	padding:20px 0 0 170px;
+}
+ 
+section.login form ul li:nth-child(3) button:first-child{
+	margin-right:10px;
+}
+
+section.login form ul li:last-child a{
+	/* text-decoration:none; */
+	font-size:10pt;
+	font-weight:600;
+	color:#555;
+}
+section.login form ul li:last-child{
+	padding:30px 120px 30px 0;
+	text-align:right;
+	
+}
+
+section.login form ul li:last-child span:first-child{
+	margin:10px;
+}
+
+/************************************ 
+	login form style sheet
+ ************************************/
+section.join form ul{
+	/* border:1px solid blue; */
+	font-size:10pt;
+	list-style-type:none;
+}
+section.join form ul li{
+	clear:left;
+}
+section.join form ul label{
+	display:inline-block;
+	width:150px;
+	padding:10px 0;
+	background:#ddd;
+	color:black;
+	border-radius:4px;
+	font-size:10pt;
+	font-weight:550;
+	float:left;
+	text-align:center;
+	margin:0 10px 5px 0;
+}
+.input1{
+	width:40%;
+	padding:8px 20px;
+	border:1px solid #ddd;
+	order-radius:4px;
+}
+/* .email{
+	width:20%;
+	padding:8px 20px;
+	border:1px solid #ddd;
+	order-radius:4px;
+} */
+input[name='email1'], input[name='email2']{
+	width:20%;
+	padding:8px 20px;
+	border:1px solid #ddd;
+	order-radius:4px;
+}
+input[name='email2'] +select,select[name='phone1']{
+	width:80px;
+	font-size:9pt;
+	border:1px solid lightgray;
+	dorder-radius:4px;
+	margin-left:5px;
+}
+
+input[name='phone2'],input[name='phone3']{
+	width:80px;
+	border:1px solid #ddd;
+	border-radius:4px;
+	padding:8px 4px;
+	text-indent:2px;
+}
+
+textarea[name='intro']{
+	border:1px solid #ddd;
+	border-radius:4px;
+	width:60%;
+	height:100px;
+	font-size:10pt;
+	padding:8px 10px;
+}
+input[type='radio'],input[type='radio'] +span,
+input[type='checkbox'],input[type='checkbox'] +span{
+	/* border:1px solid red; */
+	fonr-size:9pt;
+	margin-left:5px;
+	padding:8px 4px;
+	vertical-align:middle;
+}
+
+form[name='joinform'] ul li:last-child{
+	text-align:center;
+	padding:20px 0;
+}
+
+form[name='joinform'] ul li:last-child button:first-child{
+	margin-right:10px;
+}
+
+
+
+
+/************************************ 
+	mypage form style sheet
+ ************************************/
+section.mypage div{
+	height:300px;
+	text-align:center;
+	padding-top:30px;
+}
+section.mypage article {
+	border:1px solid #ddd;
+	border-radius:4px;
+	width:200px;
+	padding:30px 0;
+	text-align:center;
+	font-size:12pt;
+	font-weight:700;
+	background:tomato;
+	color:white;
+	display:inline-block;
+	cursor:pointer;
+}
+
+section.mypage article:first-child{
+	background:mediumseagreen;
+	margin-right:10px;
+}
+
+
+/************************************ 
+	notice, board commons form style sheet
+ ************************************/
+section.notice table, section.notice th, section.notice td,
+section.board table, section.board th, section.board td{
+	border:1px solid #777;
+	border-collapse:collapse;
+	text-align:center;
+	font-size:11pt;
+	color:#333;
+}
+
+section.notice th, section.notice td,
+section.board th, section.board td{
+	padding:4px 0;
+}
+
+section.notice tr > td:nth-child(2),
+section.board tr > td:nth-child(2){
+	/* border:1px solid red; */
+	text-align:left;
+	text-indent:20px;
+}
+
+section.notice tr:first-child,
+section.board tr:nth-child(2){
+	background:#ddd;
+	color:#333;
+}
+
+section.notice tr:last-child td,
+section.board tr:last-child td{
+	border:1px solid white;
+	padding-bottom:20px;
+}
+
+section.notice tr > td:nth-child(2) a,
+section.board tr > td:nth-child(2) a{
+	text-decoration:none;
+}
+
+section.notice tr > td:nth-child(2) a:hover,
+section.board tr > td:nth-child(2) a:hover{
+	text-decoration:underline;
+}
+
+
+
+/************************************ 
+	notice commons form style sheet
+ ************************************/
+section.notice table.notice_content th{
+	background:#ddd;
+	color:#333;
+	width:140px;
+	padding:8px 0;
+}
+
+section.notice table.notice_content tr:first-child td{
+	background:white;
+}
+
+section.notice table.notice_content tr:nth-child(2) td,
+section.board table.board_list tr:nth-child(2) td{
+	padding-left:20px;
+	text-indent:0;
+}
+
+
+/************************************ 
+	board commons form style sheet
+ ************************************/
+section.board table.board_list tr:first-child td{
+	border: 1px solid white;
+	border-bottom:1px solid #777;
+	text-align:right;
+}
+
+section.board table.board_list tr:first-child td button{
+	margin-right:10px;
+	
+}
+
+section.board form[name='writeForm'] table button,
+section.board table.board_content button,
+section.board form[name='updateForm'] table button,
+section.board form[name='deleteForm'] table button{
+	width:100px;
+	margin:20px 5px;
+}
+
+section.board form[name='writeForm'] table th,
+section.board table.board_content th,
+section.board form[name='updateForm'] table th{
+	background:#ddd;
+	color:#333;
+}
+
+section.board form[name='writeForm'] table td,
+section.board table.board_content td,
+section.board form[name='updateForm'] table td{
+	background:white;
+}
+
+section.board form[name='writeForm'] table input,
+section.board form[name='writeForm'] table textarea,
+section.board form[name='updateForm'] table input,
+section.board form[name='updateForm'] table textarea{
+	width:80%;
+	padding:5px 20px;
+	border:1px solid #ddd;
+	border-radius:4px;
+}
+
+section.board form[name='writeForm'] table,
+section.board form[name='updateForm'] table{
+	width:60%;
+}
+
+section.board form[name='writeForm'] table textarea
+section.board form[name='updateForm'] table textarea{
+	height:140px;
+}
+
+section.board form[name='writeForm'] input[name='id']{
+	font-weight:500;
+}
+
+section.board form[name='deleteForm'] img{
+	width:30%;
+}
+section.board form[name='deleteForm'] table td{
+	border:1px solid white;
+	background:white;
+	font-size:13pt;
+	font-weight:500;
+}
+
+
+/************************************ 
+	admin form style sheet
+ ************************************/
+section.admin div{
+	height:300px;
+	text-align:center;
+	padding-top:30px;
+}
+
+section.admin div article{
+	padding:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

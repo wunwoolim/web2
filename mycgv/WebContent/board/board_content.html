@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>MYCGV</title>
+	<meta charset="UTF-8">
+	<title>MYCGV</title>
+	<link rel="stylesheet" href="http://localhost:9000/mycgv/css/mycgv.css">
 </head>
 <body>
 	<!-- header -->
 	
 	<iframe src="http://localhost:9000/mycgv/header.html" 
-	scrolling="no" width="100%" height="300px" frameborder=0></iframe>
+	scrolling="no" width="100%" height="149px" frameborder=0></iframe>
 	<!-- 149px는 백그라운드 사이즈, frameborder 테두리 0 -->
 	
 	<!-- content -->
 	<div class="content"> 
-		<section class="board_content">
-			<h1>게시판</h1>
-							<table border="1">
+		<section class="board">
+			<h1 class="title">게시판</h1>
+			<table class="board_content">
 				<tr>
 					<th>제목</th>
-					<th>전쟁활동 잼있었습니다</th>
+					<td>전쟁활동 잼있었습니다</td>
 				</tr>
 				<tr>
 					<th>내용</th>
-					<th>전쟁활동 잼있었습니다<br><br>
-					</th>
+					<td>전쟁활동 잼있었습니다<br><br>
+					</td>
 				<tr>
 					<th>조회수</th>
-					<th>123</th>
+					<td>123</td>
 				</tr>
 				<tr>
 					<th>작성자</th>
-					<th>hong1234</th>
+					<td>hong1234</td>
 				</tr>
 				<tr>
 					<th>작성일자</th>
-					<th>2023-04-18</th>
+					<td>2023-04-18</td>
 				</tr>
 				<tr>
 					<td colspan="2">
 						<a href="board_update.html">
-						<button type="button">수정하기</button></a>
+						<button type="button" class="btn_style">수정하기</button></a>
 						<a href="board_delete.html">
-						<button type="button">삭제하기</button></a>
+						<button type="button" class="btn_style">삭제하기</button></a>
 						<a href="board_list.html">
-						<button type="button">리스트</button></a>
+						<button type="button" class="btn_style">리스트</button></a>
 						<a href="http://localhost:9000/mycgv/index.html">
-						<button type="button">홈으로</button></a>
+						<button type="button" class="btn_style">홈으로</button></a>
 					</td>
 				</tr>
 			</table>
