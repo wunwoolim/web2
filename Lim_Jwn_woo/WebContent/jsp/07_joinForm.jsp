@@ -1,25 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<title>MYCGV</title>
-	<link rel="stylesheet" href="http://localhost:9000/mycgv/css/mycgv.css">
-	<script src="http://localhost:9000/mycgv/js/jquery-3.6.4.min.js"></script>
-	<script src="http://localhost:9000/mycgv/js/mycgv_jquery.js"></script>
-	<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+	
 </head>
 <body>
-	<!-- header -->
-	
-	<iframe src="http://localhost:9000/mycgv/header.html" 
-	scrolling="no" width="100%" height="149px" frameborder=0></iframe>
-	<!-- 149px는 백그라운드 사이즈, frameborder 테두리 0 -->
-	
 	<!-- content -->
 	<div class="content"> 
 		<section class="join">
 			<h1 class="title">회원가입</h1>
-			<form name="joinform" action="#" method="get">
+			<form name="joinform" action="07_joinCheck.jsp" method="post">
 				<ul>
 					<li>
 						<label>아이디</label>
@@ -90,16 +83,13 @@
 						<textarea  name="intro" placeholder="*200자 이내로 작성해주세요"></textarea>
 					</li>
 					<li>
-						<button type="button" id="btnJoin">가입하기</button>
-						<button type="button" id="joinReset">다시입력</button>
+						<button type="submit" id="btnJoin">가입하기</button>
+						<button type="reset" id="joinReset">다시입력</button>
 					</li>
 				</ul>
 			</form>
 		</section>
 	</div>	
-	<!-- footer -->
-	<iframe src="http://localhost:9000/mycgv/footer.html"
-	scrolling="no" width="100%" height="500px" frameborder=0></iframe>
 	
 </body>
 </html>

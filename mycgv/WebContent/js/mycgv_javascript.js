@@ -101,7 +101,7 @@ function joinCheck(){
 		return false;
 	}else{
 		//아이디,패스워드가 전부 입력이 됬을시 서버로 정보 전송
-		joinForm.submit();
+		joinform.submit();
 	}
 	
 }
@@ -122,3 +122,117 @@ function joinReset(){
 	document.getElementById("name").value = "";
 	document.getElementById("id").focus();
 }
+
+
+
+/*
+	회원가입 폼 체크 - 비밀 번호 & 비밀번호 확인 
+ */
+function passCheck(){
+	//pass , cpass 유효성 체크가 먼저 진행이 되어야한다
+	/*alert("pass Ceck ~~!");*/
+	let pass = document.getElementById("pass");
+	let cpass = document.getElementById("cpass");
+	let cmsg = document.getElementById("cmsg");
+	
+			if(pass.value != ""){
+				if(cpass.value != ""){}
+			
+			if(pass.value == cpass.value){
+				/*alert("패스워드가 동일합니다");*/
+				cmsg.innerHTML = "비밀번호가 동일합니다.";
+				cmsg.style.color="blue";
+				cmsg.style.display = "block";
+				cmsg.style.margin = "5px";
+				document.getElementById("name").focus();
+			}else{
+				/*alert("패스워드가 다릅니다");*/
+				cmsg.innerHTML = "비밀번호가 동일하지 않습니다. 다시 입력해주세요.";
+				cmsg.style.color="red";
+				cmsg.style.display = "block";
+				pass.value="";
+				cpass.value="";
+				pass.focus();
+			}
+		}
+	
+}
+/*
+회원가입 폼 체크 - 이메일 체크
+*/
+function emailCheck(){
+	let email2 = document.getElementById("email2");
+	let email3 = document.getElementById("email3");
+	
+	if(email3.value == "default"){
+		/*alert("이메일 주소를 선택해주세요.");*/
+		email3.focus();
+		cemil2.value="";
+	}else if(email3.value == "self"){
+		email2.value = "";
+		email2.focus ();
+	}else{
+		email2.value = email3.value;
+	}
+}
+
+
+/*
+회원가입 폼 체크 - 주소 찾기
+*/
+
+function searchAddr(){
+	new daum.Postcode({
+        oncomplete: function(data) {
+            // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분입니다.
+            // 예제를 참고하여 다양한 활용법을 확인해 보세요.
+        	/*alert(data.address);*/
+        	document.getElementById("addr1").value
+        	= "("+data.zonecode+")" + data.address;
+        	document.getElementById("addr2").focus();
+        }
+    }).open();
+}
+
+/*
+게시판 글쓰기 폼 체크 
+*/
+
+function boardFormCheck(){
+	let btitle = document.getElementById("btitle");
+	if(btitle.value == ""){
+		alert("제목을 입력해주세요");
+		btitle.focus();
+	}else{
+		//서버 전송
+		writeForm.submit();
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

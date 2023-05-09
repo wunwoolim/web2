@@ -340,7 +340,10 @@ form[name='joinform'] ul li:last-child{
 form[name='joinform'] ul li:last-child button:first-child{
 	margin-right:10px;
 }
-
+#cmsg{
+	display:none;
+	margin-left:30px;
+}
 
 
 
